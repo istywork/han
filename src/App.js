@@ -1,10 +1,21 @@
-import Nav from './components/Nav';
+import MainPage from "./components/MainPage";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Nav />
-    </div>
+    // <Router>
+    //   <Switch>
+    //     <Route exact path="/">
+    //       <MainPage />
+    //     </Route>
+    //   </Switch>
+    // </Router>
+    <MainPage />
   );
 }
 

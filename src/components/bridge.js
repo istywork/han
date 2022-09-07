@@ -1,14 +1,19 @@
 import React from "react";
 
-function bridge(props) {
+function bridge({ data }) {
 	return (
-		<div>
-			<figure class="figure">
-				<img src="..." class="figure-img img-fluid rounded" alt="..." />
-				<figcaption class="figure-caption">
-					{props.name}
-				</figcaption>
-			</figure>
+		<div className="card">
+			<div className="card-body">
+				<img src="..." className="card-img-top" alt="..." />
+				<div className="card-text">
+					<h4 className="card-title">{data.name}</h4>
+					{data.length}<br />
+					{data.built}<br />
+					{data.region}<br />
+					{data.description}<br />
+					{data.feature}
+				</div>
+			</div>
 		</div>
 	);
 }
